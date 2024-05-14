@@ -1,0 +1,147 @@
+apiVersion: v1
+entries:
+  datadog:
+  - apiVersion: v1
+    appVersion: "7"
+    created: "2024-02-06T15:35:35.492113791Z"
+    dependencies:
+    - condition: clusterAgent.metricsProvider.useDatadogMetrics
+      name: datadog-crds
+      repository: https://helm.datadoghq.com
+      tags:
+      - install-crds
+      version: 1.0.1
+    - condition: datadog.kubeStateMetricsEnabled
+      name: kube-state-metrics
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 2.13.2
+    description: Datadog Agent
+    digest: 29c2af9b42bed523fc7dd2d1b0cae626839db899f716df6971c38ea7ad2c34a2
+    home: https://www.datadoghq.com
+    icon: https://datadog-live.imgix.net/img/dd_logo_70x75.png
+    keywords:
+    - monitoring
+    - alerting
+    - metric
+    maintainers:
+    - email: support@datadoghq.com
+      name: Datadog
+    name: datadog
+    sources:
+    - https://app.datadoghq.com/account/settings#agent/kubernetes
+    - https://github.com/DataDog/datadog-agent
+    urls:
+    - datadog-1.0.0.tgz
+    version: 1.0.0
+  spartan:
+  - apiVersion: v2
+    appVersion: 1.0.9
+    created: "2024-02-06T15:35:35.504567444Z"
+    description: A Helm chart for Kubernetes
+    digest: e1c9d638d476b77a05809361519f2a3ae73c5f1e62bd2afcfe852004518b2a5e
+    name: spartan
+    type: application
+    urls:
+    - spartan-1.0.9.tgz
+    version: 1.0.9
+  - apiVersion: v2
+    appVersion: 1.0.8
+    created: "2024-02-06T15:35:35.503577931Z"
+    description: A Helm chart for Kubernetes
+    digest: b446ef5c4ff3d1a4b630f13091df4b002d8c3cd5543b4b5954407d13eabdce7b
+    name: spartan
+    type: application
+    urls:
+    - spartan-1.0.8.tgz
+    version: 1.0.8
+  - apiVersion: v2
+    appVersion: 1.0.7
+    created: "2024-02-06T15:35:35.502536319Z"
+    description: A Helm chart for Kubernetes
+    digest: e42cac2e2c288339683d82136d9711f2a184f733d803a6d0d4f4e34e5a101f12
+    name: spartan
+    type: application
+    urls:
+    - spartan-1.0.7.tgz
+    version: 1.0.7
+  - apiVersion: v2
+    appVersion: 1.0.6
+    created: "2024-02-06T15:35:35.501547607Z"
+    description: A Helm chart for Kubernetes
+    digest: dd800ad50ab2d8098f102224887a5675d0d3c5f95f5d3a19ffc87f90682da852
+    name: spartan
+    type: application
+    urls:
+    - spartan-1.0.6.tgz
+    version: 1.0.6
+  - apiVersion: v2
+    appVersion: 1.0.5
+    created: "2024-02-06T15:35:35.500629595Z"
+    description: A Helm chart for Kubernetes
+    digest: f04f9ab320c509d2e6d5ebe555fca9d0b192fbf986b6a9e8b699575b0bc78bc2
+    name: spartan
+    type: application
+    urls:
+    - spartan-1.0.5.tgz
+    version: 1.0.5
+  - apiVersion: v2
+    appVersion: 1.0.4
+    created: "2024-02-06T15:35:35.499119177Z"
+    description: A Helm chart for Kubernetes
+    digest: e6b301406e72b4b45542305024fdf3e3248d9744fc223b30b2a4e4ba9f09215f
+    name: spartan
+    type: application
+    urls:
+    - spartan-1.0.4.tgz
+    version: 1.0.4
+  - apiVersion: v2
+    appVersion: 1.0.3
+    created: "2024-02-06T15:35:35.497656259Z"
+    description: A Helm chart for Kubernetes
+    digest: 91e0f788fd3ff519ada9665d471e810f8ad6070f42dd80667d0b6ba49b829855
+    name: spartan
+    type: application
+    urls:
+    - spartan-1.0.3.tgz
+    version: 1.0.3
+  - apiVersion: v2
+    appVersion: 1.0.2
+    created: "2024-02-06T15:35:35.496542945Z"
+    description: A Helm chart for Kubernetes
+    digest: 1f02bca9ddef7d77fc4be7c698ca64e6e43d2932b145fd75b25c5e49353619e1
+    name: spartan
+    type: application
+    urls:
+    - spartan-1.0.2.tgz
+    version: 1.0.2
+  - apiVersion: v2
+    appVersion: 1.0.1
+    created: "2024-02-06T15:35:35.495530533Z"
+    description: A Helm chart for Kubernetes
+    digest: 7436d35a1a330c1faae115cf3656b8533b1f03dd6dfb6450a121c5a28c8b953e
+    name: spartan
+    type: application
+    urls:
+    - spartan-1.0.1.tgz
+    version: 1.0.1
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2024-02-06T15:35:35.494361718Z"
+    description: A Helm chart for Kubernetes
+    digest: bdcb7bc5730b26d7b6e4f65c1bed4c9f189bd0164e3e7a61bde09371e1e86161
+    name: spartan
+    type: application
+    urls:
+    - spartan-1.0.0.tgz
+    version: 1.0.0
+  - apiVersion: v2
+    appVersion: 0.2.0
+    created: "2024-02-06T15:35:35.493178104Z"
+    description: A Helm chart for Kubernetes
+    digest: fab37cc58d5eaf87286be799258c9e94440dac11cd77bc0461e7a8c4cfc5e1df
+    name: spartan
+    type: application
+    urls:
+    - spartan-0.2.0.tgz
+    version: 0.2.0
+generated: "2024-02-06T15:35:35.478667726Z"

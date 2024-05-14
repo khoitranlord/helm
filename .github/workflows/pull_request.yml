@@ -1,0 +1,22 @@
+name: Helm Check
+
+on: pull_request
+
+jobs:
+  helm-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v3
+
+      - name: helm-check-default
+        uses: igabaydulin/helm-check-action@0.1.4
+        env:
+          CHART_LOCATION: ./charts/spartan
+          CHART_VALUES: ./charts/spartan/values.yaml
+
+      - name: helm-check-enabled-all
+        uses: igabaydulin/helm-check-action@0.1.4
+        env:
+          CHART_LOCATION: ./charts/spartan
+          CHART_VALUES: ./test/values.yaml
